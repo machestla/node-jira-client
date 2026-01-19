@@ -677,7 +677,7 @@ export default class JiraApi {
    */
   searchJira(searchString, optional = {}) {
     return this.doRequest(this.makeRequestHeader(this.makeUri({
-      pathname: '/search',
+      pathname: '/search/jql',
     }), {
       method: 'POST',
       followAllRedirects: true,
